@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>World Map Explorer</title>
+</head>
+<body>
+
+<h1>World Map Explorer</h1>
+<p>Click on a country in the map to open its information page in a new tab.</p>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOQ9NMslyv4gZrobEwkeEfnkBEzW_lW_MXzK2Kse4-sQ&s" alt="World Map" width="1000" height="500" usemap="#worldmap">
+
+<map name="worldmap">
+
+<!-- circle: for a circular region -->
+<area shape="circle" coords="717,189,30" href="https://en.wikipedia.org/wiki/India" alt="India" target="_blank">
+<area shape="circle" coords="356,278,45" href="https://en.wikipedia.org/wiki/Brazil" alt="Brazil" target="_blank">
+
+<!-- rect: for a rectangular region -->
+<area shape="rect" coords="815,285,925,360" href="https://en.wikipedia.org/wiki/Australia" alt="Australia" target="_blank">
+<area shape="rect" coords="569,169,597,194" href="https://en.wikipedia.org/wiki/Egypt" alt="Egypt" target="_blank">
+
+<!-- poly: for an irregular (polygon) shaped region -->
+<area shape="poly" coords="153,114,314,114,300,150,278,181,231,178,175,161" href="https://en.wikipedia.org/wiki/United_States" alt="United States" target="_blank">
+<area shape="poly" coords="703,139,780,105,875,106,850,150,790,180,740,185" href="https://en.wikipedia.org/wiki/China" alt="China" target="_blank">
+
+<!-- default: rest of the image -->
+<area shape="default" href="https://en.wikipedia.org/wiki/World_map" alt="World Map" target="_blank">
+
+</map>
+
+<h2>Countries on this Map</h2>
+<ul>
+<li>India (circle)</li>
+<li>Brazil (circle)</li>
+<li>Australia (rect)</li>
+<li>Egypt (rect)</li>
+<li>United States (poly)</li>
+<li>China (poly)</li>
+<li>Any other area (default)</li>
+</ul>
+
+</body>
+</html>
